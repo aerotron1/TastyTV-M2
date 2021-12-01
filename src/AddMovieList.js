@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AddMovie from './AddMovie'
 
 function AddMovieList() {
     const [adds, setAdds] = useState([])
@@ -12,16 +13,31 @@ function AddMovieList() {
         //setreleasedValue(event.target.value)//render check
     }
 
+    //     function handleChangerel(event) {
+    //     setMovieValue(event.target.value)
+    //     //setreleasedValue(event.target.value)//render check
+    // }
+
     function addMovie(event) {
         event.preventDefault()
-        setAdds([...adds,{name:movieValue}])//render check
+        setAdds([...adds,{name:movieValue, watched: false}])//render check
+    }
+
+    function watchedMovie(name) {
+        const newMovies = adds.map((movie) => {
+            if (movie.name === name) {
+                return {...movie, watched: true}
+            }
+            return movie
+        })
+        setAdds(newMovies)
     }
 
     return (
         <section>
             <div>
                 {adds.map((add, index) => 
-                    <h2 key={`add-${index}`}>{add.name /* + " " + add.releasedOn */}</h2>
+                    <AddMovie watchedMovie={watchedMovie} key={`add-${index}`} add={add}/>
                 )}
             </div>
             <form>
