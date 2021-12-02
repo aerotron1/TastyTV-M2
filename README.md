@@ -1,70 +1,204 @@
-# Getting Started with Create React App
+# Project - TastyTV ?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> TastyTV is a movie and tv show live-streaming service. Whom requires promotional website to pubicisize the company and its offerings. Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later
+> Live demo [_here_](). ???
 
-## Available Scripts
+## Table of Contents ?
 
-In the project directory, you can run:
+- [General Info](#general-information)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Project Status](#project-status)
+- [Room for Improvement](#room-for-improvement)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
 
-### `npm start`
+## General Information
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Introduction ???
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+??Project includes a SPA that will help people add, remove movies from watch later list. They should also be able to mark an item as watched. In order to get started the data was fetched from TastyTV API.
 
-### `npm test`
+# Project purpose ?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Requrements see below:-
 
-### `npm run build`
+- Display the list of movies fetched from the API.
+- Special feature, when clicked on the movie button, It should display the name of the movie. A form to include user input in order to add and store a movie. In addition allow the user to mark it as watched and remove it.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Wireframes and User Stories see below
+  > [_here_](https://miro.com/app/board/o9J_lqaMUxY=/.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots ?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![User Stories](./assets/img/userstories.png)
+![Wireframe]()
 
-### `npm run eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- HTML - version: 5.0
+- CSS - version: 3.0
+- JavaScript: version ES6
+- Reactjs: version 17.0.2
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Features ?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+List the ready features here:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Links to social media accounts when clicked opens the link in a new tab.
+- Provides a random movie suggestion when clicked.
+- Once registered a message appears at the bottom of the page.
+- Clear the registration form if user needs to start again.
 
-## Learn More
+## Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Where is it located?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> HTTPS link [_here_](https://github.com/aerotron1/TastyTV-M2.git).
+> GitHub link [_here_](git@github.com:aerotron1/TastyTV-M2.git).
 
-### Code Splitting
+## Planning Stage ?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- With reference to client brief, a wireframe and user story was created.
+- I looked at class tutorials, metacritic, apple and imdb for conceptual ideas (streaming sites not promotional).
+- Sitmap starts with the Homepage (static) which will connect:-
+  - Announcement
+  - Programme
+  - Random movie page
+  - Registration
+    As well as including the client initial requirements. The wireframe includes some extras such as the burger menu, sign in button, search feature etc.
 
-### Analyzing the Bundle Size
+## Development Stage ?
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#Retrospective
 
-### Making a Progressive Web App
+29/11/21
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. What have you done so far
+   - I created a user story and wireframe based on the client brief
+   - Created react app package and removed unnecessary files/imports.
+   - Defined components.
+   - Implementing the static UI to show content.
+2. What are you going to work on next
 
-### Advanced Configuration
+   - static UI to show content
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. What blockers you have (if any)
+   - Errors with import export and defining components.
 
-### Deployment
+30/11/21
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. What have you done so far
+   - Implemented static UI, props and state.
+   - Fetched data from client API
+   - Debugged errors with map()
+2. What are you going to work on next
 
-### `npm run build` fails to minify
+   - Get buttons to add and show watched movie in a different colour
+   - Create repository and Push commit
+   - Update README file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. What blockers you have (if any)
+   - Map() due not defining component and improper use of props.
+
+01/12/21
+
+1. What have you done so far
+   - Implemented static UI, props and state.
+   - Fetched data from client API
+   - Debugged errors with map()
+   - Get buttons to add and store movies.
+   - Click watched movie to highlight a movie in a different colour.
+2. What are you going to work on next
+   - Remove movies.
+   - Fix bug with the input movie release date.
+   - Update README file and improve code quality.
+3. What blockers you have (if any)
+   - Add Movie button does not render correctly when the state changes.
+   - Map() due not defining component and improper use of props.
+   - Import/Export with AddMovies and AddMovieList
+   - AddMovieList component add={add} had a spelling mistake when using props.
+   - Failed to compile - Index not defined. - moved key and remove space from h2 tag.
+
+## Usage ?
+
+How does one go about using it?
+Various use cases and code examples here.
+
+- Various web browsers such as Chrome, Firefox, Edge etc.
+- Different OS e.g. Windows and Mac.
+- Different devices for a responsive test.
+
+Usage across pages listed below:-
+Homepage:-
+
+- Includes placeholder for image and video (if required).
+- When clicked, the links to social media pages in the company information box open in a new tab. Another option is also in the footer but are not active.
+  `<a href="https://www.youtube.com/" target="_blank">`
+- When clicked, Navigate between pages located in the header.
+  `<a href="announcement.html">Announcement</a>`
+
+Announcement:-
+
+- Includes palceholder for images and future announcements (lorem ipsum).
+
+Programming:-
+
+- Display the twelve hour streaming programme schedule.
+  So on a Monday from 09:00 to 21:00 one movie will repeat.
+  Then from 21:00 to 09:00(Tuesday) a different movie will repeat.
+  See programme.js file for code.
+
+Random:-
+
+- Includes a feature to get a random movie by a click of a button.
+- When clicked on "Recommend a Movie", it provides a random movie suggestion.
+  See random.js file for code.
+
+Registration:-
+
+- Includes text fields, text areas, radio and check buttons.
+- When register button is clicked, it displays a message.
+- When clicked on the reset button, it deletes the content.
+  see registration.js file for code.
+
+## Project Status
+
+Project is: _in progress_
+
+## Problem-Solving Strategy ?
+
+-
+
+## Room for Improvement ?
+
+Room for improvement:
+
+-
+
+To do:
+
+-
+
+## Acknowledgements
+
+Give credit here.
+
+- This project was inspired by class tutorials, metacritic, apple and imdb.
+- This project was based on [this tutorial](https://www.example.com).
+- [Metacritic](https://www.metacritic.com/).
+- [IMDB](https://www.imdb.com/).
+- [Apple](https://www.apple.com/uk/).
+- [README](https://github.com/ritaly/README-cheatsheet).
+- [ojects & callbacks](https://lpgkn.csb.app/)
+- [Freecodecamp](https://www.freecodecamp.org/)
+- [DOM manipulation study](https://mpqcw.csb.app/)
+- [W3schools](https://www.w3schools.com/).
+- [MDN](https://developer.mozilla.org/en-US/).
+
+## Contact
+
+Created by [Stanton] - If any questions, feel free to contact me.

@@ -44,6 +44,9 @@ function AddMovieList() {
                 <input onChange={handleChangeName} placeholder="Add name" />
                 <input onChange={handleChangeName} placeholder="Add released on" />
                 <button onClick={addMovie} >Add Movie</button>
+                <button onClick={() => setMovieValue("")}>
+        Remove movies added
+        </button>
             </form>
         </section>
     )
