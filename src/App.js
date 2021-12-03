@@ -15,7 +15,7 @@ const initialMovie = {
 
 function App() {
   const [currentMovie, setCurrentMovie] = useState()
-  const [movieData,  setMovieData] = useState([initialMovie])
+  const [movieData, setMovieData] = useState([initialMovie])
 
   useEffect(() => {
     async function getData() {
@@ -25,20 +25,6 @@ function App() {
     }
     getData()
   }, [])
-
-  // useEffect(() => {
-  //   document.title = currentMovie.name
-  //   if (currentMovie) {
-  //     localStorage.setItem('movie', JSON.stringify(currentMovie))//check  JSON
-  //   }
-  // }, [currentMovie])
-
-  // useEffect(() => {
-  //       const movie = localStorage.getItem("movie")
-  //       if (movie) {
-  //           setCurrentMovie(JSON.parse(movie))
-  //       }
-  //   })
 
   return (
     <div className="App">

@@ -1,7 +1,7 @@
 # Project - TastyTV ?
 
-> TastyTV is a movie and tv show live-streaming service. Whom requires promotional website to pubicisize the company and its offerings.They want to Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later.
-> Live demo [_here_](http://localhost:3000/?). ??
+> TastyTV is a movie and tv show live-streaming service. Whom require a promotional website to pubicisize the company and its offerings.They want to Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later.
+> Live demo [_here_](https://github.com/aerotron1/TastyTV-M2.git).
 
 ## Table of Contents ?
 
@@ -10,8 +10,8 @@
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Setup](#setup)
-- [PlanningStage] (#planning-stage)
-- [DevelopmentStage] (#Development-stage)
+- [PlanningStage](#planning-stage)
+- [DevelopmentStage](#Development-stage)
 - [Usage](#usage)
 - [Project Status](#project-status)
 - [Room for Improvement](#room-for-improvement)
@@ -23,9 +23,7 @@
 
 # Introduction ???
 
-> Project includes a SPA that will help people add, remove movies from watched later list. They should also be able to mark an item as watched. In order to get started the data was fetched from TastyTV API.
-
-> I have created this to learn reactjs and put into practice what was learnt in class.
+> Project includes a SPA that will help people add, remove movies from watched later list. They should also be able to mark an item as watched. In order to get started the data was fetched from TastyTV API. I have created this to learn reactjs and put into practice what was learnt in class.
 
 # Project purpose ?
 
@@ -35,6 +33,7 @@ Requrements see below:-
 - Special feature, when clicked on the movie button, It should display the name of the movie. A form to include user input in order to add and store a movie. In addition allow the user to mark it as watched and remove it.
 
 - Wireframes and User Stories see below
+- Used wireframes and user stories to get started, from which I had to deviate from the original design.
   > [_here_](https://miro.com/app/board/o9J_lqaMUxY=/.)
 
 ## Screenshots
@@ -55,6 +54,7 @@ List the ready features here:
 
 - View a variety of movies when refreshed. Once clicked view movie information.
 - When you add a new movie, you should mark it as watched where the text turns green.
+- Remove all and individual movies.
 
 ## Setup
 
@@ -74,11 +74,10 @@ List the ready features here:
 
 ## Planning Stage ?
 
-- With reference to client brief, a wireframe and user story was created to ensure I have a plan.
-- I looked at class tutorials to get started and learn react.
-- During development stage, I created a retrospective after each day to know what I have acheived and what to work on next. Also includes any blockers come across.
-- Sitmap starts with the Homepage (static) which will connect:-
-  - Homepage
+- With reference to the client brief, a wireframe and user story was created to ensure I have a plan to work with.
+- I looked at class tutorials to get started and learnt react.
+- During development stage, I created a retrospective after each day to know what I have acheived and what to work on next. It includes any blockers I came across.
+- Sitmap starts with the Homepage.
 
 ## Development Stage ?
 
@@ -122,7 +121,7 @@ List the ready features here:
 2. What are you going to work on next
    - Remove all movies and remove filtered movie.
    - Fix bug with the input field movie release date.
-   - Update README file and improve code quality.
+   - Update README file and improve code quality. Delete files not in use and commented code.
 3. What blockers you have (if any)
    - Add Movie button does not render correctly when the state changes.
    - Map() due not defining component and improper use of props.
@@ -137,13 +136,15 @@ List the ready features here:
 - Remove movie
 
 2. What are you going to work on next
-   - Complete check for functionality
+   - Complete check for functionality.
+   - Edit an item(movie)
    - Add CSS using react components.
-   - Local storage
+   - Local storage to save the movie information in the browser.
    - Update README file and improve code quality.
 3. What blockers you have (if any)
    - Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render in similar format to client Array (Movie.js).
    - After a new movie is entered, it duplicates as an output.
+   - watchedMovie does not change colour individually.
 
 ## Usage ?
 
@@ -157,7 +158,7 @@ How does one go about using it?
 - Remove all movie `<button onClick={() => setMovieValue("")}>Remove movies added</button>`
   Remove a movie `<button onClick={() => props.removeMovie(props.add)}>Remove</button>`
 
-- Various web browsers such as Chrome, Brave, Firefox,etc.
+- Tested on web browsers such as Chrome, Brave, Firefox etc.
 
 ## Project Status
 
@@ -178,6 +179,7 @@ To do:
 ## Unsolved problems
 
 - Add Movie button does not render correctly when the state changes. It does not include release date and image. Bug with input release date - unable to render in similar format to client Array (Movie.js).
+- watchedMovie does not change colour individually when clicked on the watched button.
 
 ## Acknowledgements
 

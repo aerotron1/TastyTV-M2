@@ -21,7 +21,7 @@ function AddMovieList() {
 
     function watchedMovie(name) {
         const newMovies = adds.map((movie) => {
-            if (movie.name === name && movie.release) {
+            if (movie.name === name) {
                 return {...movie, watched: true}
             }
             return movie
