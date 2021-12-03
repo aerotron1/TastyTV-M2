@@ -1,9 +1,9 @@
-# Project - TastyTV ?
+# Project - TastyTV
 
 > TastyTV is a movie and tv show live-streaming service. Whom require a promotional website to pubicisize the company and its offerings.They want to Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later.
 > Live demo [_here_](https://github.com/aerotron1/TastyTV-M2.git).
 
-## Table of Contents ?
+## Table of Contents
 
 - [General Info](#general-information)
 - [Technologies Used](#technologies-used)
@@ -48,7 +48,7 @@ Requrements see below:-
 - JavaScript: version ES6
 - Reactjs: version 17.0.2
 
-## Features ?
+## Features
 
 List the ready features here:
 
@@ -72,14 +72,14 @@ List the ready features here:
   -- git init > git add . > git commit -m "first commit" > git remote add origin > git push -u origin main.
   This succesfully created the repository to push frequent commits.
 
-## Planning Stage ?
+## Planning Stage
 
 - With reference to the client brief, a wireframe and user story was created to ensure I have a plan to work with.
 - I looked at class tutorials to get started and learnt react.
 - During development stage, I created a retrospective after each day to know what I have acheived and what to work on next. It includes any blockers I came across.
 - Sitmap starts with the Homepage.
 
-## Development Stage ?
+## Development Stage
 
 29/11/21
 
@@ -146,7 +146,7 @@ List the ready features here:
    - After a new movie is entered, it duplicates as an output.
    - watchedMovie does not change colour individually.
 
-## Usage ?
+## Usage
 
 How does one go about using it?
 
@@ -164,7 +164,7 @@ How does one go about using it?
 
 Project is: _in progress_
 
-## Room for Improvement ? ?
+## Room for Improvement
 
 To do:
 
