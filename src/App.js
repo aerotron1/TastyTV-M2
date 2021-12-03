@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import MovieList from './MovieList'
 import Movie from './Movie'
 import AdMovieL from './AddMovieList'
-//import movie from './movie-data'
 import './App.css';
 
 const initialMovie = {
