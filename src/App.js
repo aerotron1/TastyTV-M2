@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import MovieList from './MovieList'
 import Movie from './Movie'
-import AdMovieL from './AddMovieList'
+import AddMovieList from './AddMovieList'
 import './App.css';
 
 const initialMovie = {
@@ -36,7 +36,7 @@ function App() {
           setCurrentMovie={setCurrentMovie}
         />
         {currentMovie && <Movie movie={currentMovie} />}
-        <AdMovieL/>
+        <AddMovieList/>
         </div>
     </div>
   );
