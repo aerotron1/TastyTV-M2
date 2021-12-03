@@ -60,6 +60,15 @@ Where is it located?
 > HTTPS link [_here_](https://github.com/aerotron1/TastyTV-M2.git).
 > GitHub link [_here_](git@github.com:aerotron1/TastyTV-M2.git).
 
+Setup & Installation
+
+- Installed react app package via terminal :-
+  -- Ensured in the correct directory > npx create-react-app tastytv > npm start
+  This automatically launched the browser with react logo.
+- Created a GitHub repository :-
+  -- git init > git add . > git commit -m "first commit" > git remote add origin > git push -u origin main.
+  This succesfully created the repository to push frequent commits.
+
 ## Planning Stage ?
 
 - With reference to client brief, a wireframe and user story was created.
