@@ -14,7 +14,7 @@ const initialMovie = {
 
 function App() {
   const [currentMovie, setCurrentMovie] = useState()
-  const [movieData,  setMovieData] = useState([/* initialMovie */])
+  const [movieData,  setMovieData] = useState([initialMovie])
 
   useEffect(() => {
     async function getData() {

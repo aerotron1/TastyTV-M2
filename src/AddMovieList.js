@@ -23,6 +23,11 @@ function AddMovieList() {
         setAdds([...adds,{name:movieValue, watched: false}, {release:releasedValue}])//render check
     }
 
+    function removeMovie(movie) {
+        const newMovies = adds.filter((movieItem) => movieItem !== movie)
+        setAdds(newMovies)
+    }
+
     function watchedMovie(name) {
         const newMovies = adds.map((movie) => {
             if (movie.name === name && movie.release) {
@@ -37,7 +42,7 @@ function AddMovieList() {
         <section>
             <div>
                 {adds.map((add, index) => 
-                    <AddMovie watchedMovie={watchedMovie} key={`add-${index}`} add={add}/>
+                    <AddMovie watchedMovie={watchedMovie} removeMovie={removeMovie} key={`add-${index}`} add={add}/>
                 )}
             </div>
             <form>
