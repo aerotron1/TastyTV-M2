@@ -4,13 +4,13 @@ import AddMovie from './AddMovie'
 function AddMovieList() {
     const [adds, setAdds] = useState([])
     const [movieValue, setMovieValue] = useState("")
-    //const [releasedValue, setreleasedValue] = useState("")
+    const [releasedValue, setreleasedValue] = useState("")
 
     //console.log(movieValue)
 
     function handleChangeName(event) {
         setMovieValue(event.target.value)
-        //setreleasedValue(event.target.value)//render check
+        setreleasedValue(event.target.value)//render check
     }
 
     //     function handleChangerel(event) {
@@ -20,12 +20,12 @@ function AddMovieList() {
 
     function addMovie(event) {
         event.preventDefault()
-        setAdds([...adds,{name:movieValue, watched: false}])//render check
+        setAdds([...adds,{name:movieValue, watched: false}, {release:releasedValue}])//render check
     }
 
     function watchedMovie(name) {
         const newMovies = adds.map((movie) => {
-            if (movie.name === name) {
+            if (movie.name === name && movie.release) {
                 return {...movie, watched: true}
             }
             return movie
