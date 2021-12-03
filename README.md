@@ -1,7 +1,7 @@
 # Project - TastyTV ?
 
-> TastyTV is a movie and tv show live-streaming service. Whom requires promotional website to pubicisize the company and its offerings. Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later
-> Live demo [_here_](). ???
+> TastyTV is a movie and tv show live-streaming service. Whom requires promotional website to pubicisize the company and its offerings.The Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later
+> Live demo [_here_](http://localhost:3000/?). ???
 
 ## Table of Contents ?
 
@@ -20,7 +20,9 @@
 
 # Introduction ???
 
-??Project includes a SPA that will help people add, remove movies from watch later list. They should also be able to mark an item as watched. In order to get started the data was fetched from TastyTV API.
+Project includes a SPA that will help people add, remove movies from watched later list. They should also be able to mark an item as watched. In order to get started the data was fetched from TastyTV API.
+
+I have created this to learn reactjs and put into practice what was learnt in class.
 
 # Project purpose ?
 
@@ -30,9 +32,9 @@ Requrements see below:-
 - Special feature, when clicked on the movie button, It should display the name of the movie. A form to include user input in order to add and store a movie. In addition allow the user to mark it as watched and remove it.
 
 - Wireframes and User Stories see below
-  > [_here_](https://miro.com/app/board/o9J_lqaMUxY=/.
+  > [_here_](https://miro.com/app/board/o9J_lqaMUxY=/.)
 
-## Screenshots ?
+## Screenshots
 
 ![User Stories](./public/userstories.png)
 ![Wireframe](./public/Wireframe.png)
@@ -48,10 +50,8 @@ Requrements see below:-
 
 List the ready features here:
 
-- Links to social media accounts when clicked opens the link in a new tab.
-- Provides a random movie suggestion when clicked.
-- Once registered a message appears at the bottom of the page.
-- Clear the registration form if user needs to start again.
+- View a variety of movies when refreshed. Once clicked view movie information.
+- When you add a new movie, you should mark it as watched where the text turns green.
 
 ## Setup
 
@@ -71,14 +71,11 @@ Setup & Installation
 
 ## Planning Stage ?
 
-- With reference to client brief, a wireframe and user story was created.
-- I looked at class tutorials, metacritic, apple and imdb for conceptual ideas (streaming sites not promotional).
+- With reference to client brief, a wireframe and user story was created to ensure I have a plan.
+- I looked at class tutorials to get started and learn react.
+- During development stage, I created a retrospective after each day to know what I have acheived and what to work on next. Also includes any blockers come across.
 - Sitmap starts with the Homepage (static) which will connect:-
-  - Announcement
-  - Programme
-  - Random movie page
-  - Registration
-    As well as including the client initial requirements. The wireframe includes some extras such as the burger menu, sign in button, search feature etc.
+  - Homepage
 
 ## Development Stage ?
 
@@ -104,7 +101,7 @@ Setup & Installation
    - Debugged errors with map()
 2. What are you going to work on next
 
-   - Get buttons to add and show watched movie in a different colour
+   - Get buttons to add and show watched movie in a different colour.
    - Create repository and Push commit
    - Update README file
 
@@ -143,19 +140,21 @@ Setup & Installation
    - Update README file and improve code quality.
 3. What blockers you have (if any)
    - Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render in similar format to client Array (Movie.js).
+   - After a new movie is entered, it duplicates as an output.
 
 ## Usage ?
 
 How does one go about using it?
-Various use cases and code examples here.
+
+- Once the app is launched, you can start by clicking the movies. This should show the movie information such as name, released and image.
+- You can click removed all movie which removes the movie information.
+- If you need to add a new movie, enter the information in the input fields provided and click Add Movie.
+- If watched, click watched which higlights the movie in green.
+  `{{color: props.add.watched ? "green" : "red"}}`
+- Remove all movie `<button onClick={() => setMovieValue("")}>Remove movies added</button>`
+  Remove a movie `<button onClick={() => props.removeMovie(props.add)}>Remove</button>`
 
 - Various web browsers such as Chrome, Firefox, Edge etc.
-
-Usage across pages listed below:-
-
-Homepage:-
-
--
 
 ## Project Status
 
@@ -165,29 +164,32 @@ Project is: _in progress_
 
 -
 
-## Room for Improvement ?
-
-Room for improvement:
-
--
+## Room for Improvement ? ?
 
 To do:
 
--
+- Remove an Item.
+- Edit an Item.
+
+- Create Watch later list.
+- Apply watched feature to client API.
+- Save list data.
+- Use 3rd party API.
+- Create style with CSS using react component library.
+- Allow users to sign up & in using firebase.
 
 ## Acknowledgements
 
 Give credit here.
 
-- This project was inspired by class tutorials, metacritic, apple and imdb.
-- This project was based on [this tutorial](https://www.example.com).
-- [Metacritic](https://www.metacritic.com/).
-- [IMDB](https://www.imdb.com/).
-- [Apple](https://www.apple.com/uk/).
+- This project was inspired by class tutorials.
+- [UseEffect](https://github.com/SkillsUnion-SE-C3/react-useeffect.git).
+- [Stateprops&unidirectionalflow](https://github.com/SkillsUnion-SE-C3/unidirectional-flow-session.git)
+- [Statetopropsexcercises](https://github.com/SkillsUnion-SE-C3/react-exercises.git)
+
+- Other resources used for the project was : -
 - [README](https://github.com/ritaly/README-cheatsheet).
-- [ojects & callbacks](https://lpgkn.csb.app/)
 - [Freecodecamp](https://www.freecodecamp.org/)
-- [DOM manipulation study](https://mpqcw.csb.app/)
 - [W3schools](https://www.w3schools.com/).
 - [MDN](https://developer.mozilla.org/en-US/).
 
