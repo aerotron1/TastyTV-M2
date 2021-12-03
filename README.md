@@ -1,7 +1,7 @@
 # Project - TastyTV ?
 
-> TastyTV is a movie and tv show live-streaming service. Whom requires promotional website to pubicisize the company and its offerings.The Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later
-> Live demo [_here_](http://localhost:3000/?). ???
+> TastyTV is a movie and tv show live-streaming service. Whom requires promotional website to pubicisize the company and its offerings.They want to Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later.
+> Live demo [_here_](http://localhost:3000/?). ??
 
 ## Table of Contents ?
 
@@ -10,9 +10,12 @@
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Setup](#setup)
+- [PlanningStage] (#planning-stage)
+- [DevelopmentStage] (#Development-stage)
 - [Usage](#usage)
 - [Project Status](#project-status)
 - [Room for Improvement](#room-for-improvement)
+- [Unsolved](#unsolved-problems)
 - [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
@@ -20,9 +23,9 @@
 
 # Introduction ???
 
-Project includes a SPA that will help people add, remove movies from watched later list. They should also be able to mark an item as watched. In order to get started the data was fetched from TastyTV API.
+> Project includes a SPA that will help people add, remove movies from watched later list. They should also be able to mark an item as watched. In order to get started the data was fetched from TastyTV API.
 
-I have created this to learn reactjs and put into practice what was learnt in class.
+> I have created this to learn reactjs and put into practice what was learnt in class.
 
 # Project purpose ?
 
@@ -36,7 +39,7 @@ Requrements see below:-
 
 ## Screenshots
 
-![User Stories](./public/userstories.png)
+![User Stories](./public/Userstories.png)
 ![Wireframe](./public/Wireframe.png)
 
 ## Technologies Used
@@ -55,12 +58,12 @@ List the ready features here:
 
 ## Setup
 
-Where is it located?
+# Location
 
 > HTTPS link [_here_](https://github.com/aerotron1/TastyTV-M2.git).
 > GitHub link [_here_](git@github.com:aerotron1/TastyTV-M2.git).
 
-Setup & Installation
+# Setup & Installation
 
 - Installed react app package via terminal :-
   -- Ensured in the correct directory > npx create-react-app tastytv > npm start
@@ -154,29 +157,27 @@ How does one go about using it?
 - Remove all movie `<button onClick={() => setMovieValue("")}>Remove movies added</button>`
   Remove a movie `<button onClick={() => props.removeMovie(props.add)}>Remove</button>`
 
-- Various web browsers such as Chrome, Firefox, Edge etc.
+- Various web browsers such as Chrome, Brave, Firefox,etc.
 
 ## Project Status
 
 Project is: _in progress_
 
-## Problem-Solving Strategy ?
-
--
-
 ## Room for Improvement ? ?
 
 To do:
 
-- Remove an Item.
 - Edit an Item.
-
 - Create Watch later list.
 - Apply watched feature to client API.
 - Save list data.
 - Use 3rd party API.
 - Create style with CSS using react component library.
 - Allow users to sign up & in using firebase.
+
+## Unsolved problems
+
+- Add Movie button does not render correctly when the state changes. It does not include release date and image. Bug with input release date - unable to render in similar format to client Array (Movie.js).
 
 ## Acknowledgements
 
@@ -187,7 +188,7 @@ Give credit here.
 - [Stateprops&unidirectionalflow](https://github.com/SkillsUnion-SE-C3/unidirectional-flow-session.git)
 - [Statetopropsexcercises](https://github.com/SkillsUnion-SE-C3/react-exercises.git)
 
-- Other resources used for the project was : -
+- Other resources used for the project include : -
 - [README](https://github.com/ritaly/README-cheatsheet).
 - [Freecodecamp](https://www.freecodecamp.org/)
 - [W3schools](https://www.w3schools.com/).

@@ -4,23 +4,14 @@ import AddMovie from './AddMovie'
 function AddMovieList() {
     const [adds, setAdds] = useState([])
     const [movieValue, setMovieValue] = useState("")
-    const [releasedValue, setreleasedValue] = useState("")
-
-    //console.log(movieValue)
 
     function handleChangeName(event) {
         setMovieValue(event.target.value)
-        setreleasedValue(event.target.value)//render check
     }
-
-    //     function handleChangerel(event) {
-    //     setMovieValue(event.target.value)
-    //     //setreleasedValue(event.target.value)//render check
-    // }
 
     function addMovie(event) {
         event.preventDefault()
-        setAdds([...adds,{name:movieValue, watched: false}, {release:releasedValue}])//render check
+        setAdds([...adds,{name:movieValue, watched: false}])
     }
 
     function removeMovie(movie) {
@@ -49,9 +40,7 @@ function AddMovieList() {
                 <input onChange={handleChangeName} placeholder="Add name" />
                 <input onChange={handleChangeName} placeholder="Add released on" />
                 <button onClick={addMovie} >Add Movie</button>
-                <button onClick={() => setMovieValue("")}>
-        Remove movies added
-        </button>
+                <button onClick={() => setMovieValue("")}>Remove movies added</button>
             </form>
         </section>
     )

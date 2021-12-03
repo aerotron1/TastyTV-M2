@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import MovieList from './MovieList'
 import Movie from './Movie'
 import AdMovieL from './AddMovieList'
+//import movie from './movie-data'
 import './App.css';
 
 const initialMovie = {
@@ -21,11 +22,23 @@ function App() {
       const response = await fetch('https://hub.dummyapis.com/vj/wzGUkpZ')
       const data = await response.json()
       setMovieData(data)
-      // console.log(data)
     }
     getData()
-         //console.log ("app comp is change")
   }, [])
+
+  // useEffect(() => {
+  //   document.title = currentMovie.name
+  //   if (currentMovie) {
+  //     localStorage.setItem('movie', JSON.stringify(currentMovie))//check  JSON
+  //   }
+  // }, [currentMovie])
+
+  // useEffect(() => {
+  //       const movie = localStorage.getItem("movie")
+  //       if (movie) {
+  //           setCurrentMovie(JSON.parse(movie))
+  //       }
+  //   })
 
   return (
     <div className="App">

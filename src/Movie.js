@@ -14,7 +14,6 @@ function Movie(props) {
         getData()
     }, [props.movie])
 
-
     return (
         <div>
             <img alt="" src={ props.movie.bannerUrl}/>
