@@ -34,8 +34,8 @@ Requrements see below:-
 
 ## Screenshots ?
 
-![User Stories](./assets/img/userstories.png)
-![Wireframe]()
+![User Stories](./public/userstories.png)
+![Wireframe](./public/Wireframe.png)
 
 ## Technologies Used
 
