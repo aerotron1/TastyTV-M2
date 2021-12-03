@@ -6,9 +6,9 @@
 ## Table of Contents
 
 - [General Info](#general-information)
+- [Screenshots] (#screenshots)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Setup](#setup)
 - [PlanningStage](#planning-stage)
 - [DevelopmentStage](#Development-stage)
@@ -21,11 +21,11 @@
 
 ## General Information
 
-# Introduction ???
+# Introduction
 
 > Project includes a SPA that will help people add, remove movies from watched later list. They should also be able to mark an item as watched. In order to get started the data was fetched from TastyTV API. I have created this to learn reactjs and put into practice what was learnt in class.
 
-# Project purpose ?
+# Project purpose
 
 Requrements see below:-
 
