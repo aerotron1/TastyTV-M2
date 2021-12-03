@@ -123,47 +123,32 @@ Where is it located?
    - AddMovieList component add={add} had a spelling mistake when using props.
    - Failed to compile - Index not defined. - moved key and remove space from h2 tag.
 
+03/12/21
+
+1. What have you done so far
+
+- Remove movies
+
+2. What are you going to work on next
+   - Complete check for functionality
+   - Add CSS using react components.
+   - Local storage
+   - Update README file and improve code quality.
+3. What blockers you have (if any)
+   - Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render in similar format to client Array (Movie.js).
+
 ## Usage ?
 
 How does one go about using it?
 Various use cases and code examples here.
 
 - Various web browsers such as Chrome, Firefox, Edge etc.
-- Different OS e.g. Windows and Mac.
-- Different devices for a responsive test.
 
 Usage across pages listed below:-
+
 Homepage:-
 
-- Includes placeholder for image and video (if required).
-- When clicked, the links to social media pages in the company information box open in a new tab. Another option is also in the footer but are not active.
-  `<a href="https://www.youtube.com/" target="_blank">`
-- When clicked, Navigate between pages located in the header.
-  `<a href="announcement.html">Announcement</a>`
-
-Announcement:-
-
-- Includes palceholder for images and future announcements (lorem ipsum).
-
-Programming:-
-
-- Display the twelve hour streaming programme schedule.
-  So on a Monday from 09:00 to 21:00 one movie will repeat.
-  Then from 21:00 to 09:00(Tuesday) a different movie will repeat.
-  See programme.js file for code.
-
-Random:-
-
-- Includes a feature to get a random movie by a click of a button.
-- When clicked on "Recommend a Movie", it provides a random movie suggestion.
-  See random.js file for code.
-
-Registration:-
-
-- Includes text fields, text areas, radio and check buttons.
-- When register button is clicked, it displays a message.
-- When clicked on the reset button, it deletes the content.
-  see registration.js file for code.
+-
 
 ## Project Status
 
