@@ -73,8 +73,6 @@ Where is it located?
 
 ## Development Stage ?
 
-#Retrospective
-
 29/11/21
 
 1. What have you done so far
@@ -113,8 +111,8 @@ Where is it located?
    - Get buttons to add and store movies.
    - Click watched movie to highlight a movie in a different colour.
 2. What are you going to work on next
-   - Remove movies.
-   - Fix bug with the input movie release date.
+   - Remove all movies and remove filtered movie.
+   - Fix bug with the input field movie release date.
    - Update README file and improve code quality.
 3. What blockers you have (if any)
    - Add Movie button does not render correctly when the state changes.
@@ -127,7 +125,7 @@ Where is it located?
 
 1. What have you done so far
 
-- Remove movies
+- Remove movie
 
 2. What are you going to work on next
    - Complete check for functionality
