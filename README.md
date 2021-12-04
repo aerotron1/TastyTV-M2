@@ -6,7 +6,7 @@
 ## Table of Contents
 
 - [General Info](#general-information)
-- [Screenshots] (#screenshots)
+- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Setup](#setup)
@@ -167,7 +167,7 @@ List the ready features here:
 
 3. What blockers you have (if any)
 
-- Edit an item(movie) allows edit within the button itself.
+- Edit an item(movie) allows edit within the button itself. Console.log() has the button Edit has a Invalid DOM property contenteditable.
 
 ## Usage
 
@@ -180,8 +180,8 @@ How does one go about using it?
   `{{color: props.add.watched ? "green" : "red"}}`
 - Remove all movie `<button onClick={() => setMovieValue("")}>Remove movies added</button>`
   Remove a movie `<button onClick={() => props.removeMovie(props.add)}>Remove</button>`
-
 - Tested on web browsers such as Chrome, Brave, Firefox etc.
+- My favourite part to work on was using the API to fetch data from the server and click the movie names to display the information.
 
 ## Project Status
 
@@ -196,6 +196,8 @@ To do:
 - Allow users to sign up & in using firebase.
 
 ## Unsolved problems
+
+- Console.log() has the button Edit has a Invalid DOM property contenteditable.
 
 ## Acknowledgements
 
