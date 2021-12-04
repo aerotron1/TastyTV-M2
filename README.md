@@ -108,13 +108,13 @@ List the ready features here:
    - Update README file
 
 3. What blockers you have (if any)
-   - Map() due not defining component and improper use of props.
+   - Map() due to not defining component and improper use of props.
 
 01/12/21
 
 1. What have you done so far
    - Implemented static UI, props and state.
-   - Fetched data from client API
+   - Fetched data from the client API.
    - Debugged errors with map()
    - Get buttons to add and store movies.
    - Click watched movie to highlight a movie in a different colour.
@@ -124,10 +124,10 @@ List the ready features here:
    - Update README file and improve code quality. Delete files not in use and commented code.
 3. What blockers you have (if any)
    - Add Movie button does not render correctly when the state changes.
-   - Map() due not defining component and improper use of props.
+   - Map() due to not defining component and improper use of props.
    - Import/Export with AddMovies and AddMovieList
    - AddMovieList component add={add} had a spelling mistake when using props.
-   - Failed to compile - Index not defined. - moved key and remove space from h2 tag.
+   - Failed to compile where the Index was undefined. I moved key and remove space from h2 tag.
 
 03/12/21
 
@@ -144,8 +144,8 @@ List the ready features here:
    - Update README file and improve code quality.
 3. What blockers you have (if any)
    - Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render in similar format to client Array (Movie.js).
-   - After a new movie is entered, it duplicates as an output.
-   - watched feature did not change colour individually - typed different movie name.
+   - After entering a new movie, it duplicates as an output.
+   - Watched feature did not change colour individually - typed different movie name.
 
 04/12/21
 
@@ -156,7 +156,8 @@ List the ready features here:
 - Update README file and improve code quality.
 - Edit lets edit the text in the button.
 - Fixed the Add Movie button now renders correctly when the state changes. Debugged the input release date renders user input.
-- Fixed Add Movie button does noq render correctly when the state changes. It does include release date. Debugged the input release date issue due to undefined.
+- Fixed Add Movie button does not render correctly when the state changes. It does include release date. Debugged the input release date issue due to undefined.
+- Console.log() displayed invalid DOM property 'class' needs to be 'className'. Checked Index.html and other files where class had to be replaced with className.
 
 2. What are you going to work on next
 

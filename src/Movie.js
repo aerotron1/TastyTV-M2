@@ -20,7 +20,7 @@ function Movie(props) {
     }, [])
 
     return (
-        <div class="p-3 mb-2 bg-secondary text-white">
+        <div className="p-3 mb-2 bg-secondary text-white">
             <Image src={props.movie.bannerUrl} roundedCircle />
             <h2>Name: {props.movie.name}</h2>
             <h3>Release: {props.movie.releasedOn}</h3>

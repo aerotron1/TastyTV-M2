@@ -36,7 +36,7 @@ function AddMovieList() {
     }
 
     return (
-        <section class="bg-success p-2 text-white bg-opacity-50">
+        <section className="bg-success p-2 text-white bg-opacity-50">
             <div>
                 {addsMovie.map((add,index) => 
                     <AddMovie watchedMovie={watchedMovie} removeMovie={removeMovie} key={`addMovie-${index}`} addMovie={add}/>
