@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react"
 import Image from 'react-bootstrap/Image'
 
-const initialState = { id: "", name: "", released: "", watched: "" }
-
 function Movie(props) {
-    const [movie, setMovie] = useState(initialState)
+    const [movie, setMovie] = useState()
 
     useEffect(() => {
         async function getData() {

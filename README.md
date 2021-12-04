@@ -154,13 +154,14 @@ List the ready features here:
 - Fixed watched button
 - Used CSS using bootstrap react.
 - Update README file and improve code quality.
+- Edit lets edit the text in the button.
 
 2. What are you going to work on next
    - Edit an item(movie)
    - Local storage to save the movie information in the browser.
    - Update README file and improve code quality.
 3. What blockers you have (if any)
-   Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render in similar format to client Array (Movie.js).
+   - Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render user input.
 
 ## Usage
 
@@ -184,18 +185,13 @@ Project is: _in progress_
 
 To do:
 
-- Edit an Item.
-- Create Watch later list.
-- Apply watched feature to client API.
 - Save list data.
 - Use 3rd party API.
-- Create style with CSS using react component library.
 - Allow users to sign up & in using firebase.
 
 ## Unsolved problems
 
-- Add Movie button does not render correctly when the state changes. It does not include release date and image. Bug with input release date - unable to render in similar format to client Array (Movie.js).
-- watchedMovie does not change colour individually when clicked on the watched button.
+- Add Movie button does not render correctly when the state changes. It does not include release date. Bug with input release date - unable to render user input.
 
 ## Acknowledgements
 
