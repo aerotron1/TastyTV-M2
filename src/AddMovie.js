@@ -8,8 +8,8 @@ function AddMovie(props) {
             <h2 style={{ color: props.addMovie.watched ? "green" : "grey" }}>Name: {props.addMovie.name}</h2>
             <h3 style={{ color: props.addMovie.watched ? "green" : "grey" }}>Release: {props.addMovie.release}</h3>
             <Button variant="outline-success" onClick={() => props.watchedMovie(props.addMovie.name, props.addMovie.release)}>Watched</Button>{' '}
-            <Button variant="outline-warning" onClick={() => props.removeMovie(props.addMovie)}>Remove</Button>{' '}
-            <div contenteditable="true"><Button variant="outline-danger" onClick={() => props.watchedMovie(props.addMovie)}>Edit</Button>{' '}</div>
+            <Button variant="outline-danger" onClick={() => props.removeMovie(props.addMovie)}>Remove</Button>{' '}
+            <div contenteditable="true"><Button variant="outline-warning" onClick={() => props.watchedMovie(props.addMovie)}>Edit</Button>{' '}</div>
         </div>
     )
 }

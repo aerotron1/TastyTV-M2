@@ -6,7 +6,7 @@ function Movie(props) {
 
     useEffect(() => {
         async function getData() {
-            const response = await fetch(props.movie.url)
+            const response = await fetch('https://hub.dummyapis.com/vj/wzGUkpZ')
             const data = await response.json()
             setMovie(data)
         }

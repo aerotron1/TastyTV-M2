@@ -155,13 +155,18 @@ List the ready features here:
 - Used CSS using bootstrap react.
 - Update README file and improve code quality.
 - Edit lets edit the text in the button.
-- Fixed the Add Movie button now renders correctly when the state changes. Debugged with input release date renders user input.
+- Fixed the Add Movie button now renders correctly when the state changes. Debugged the input release date renders user input.
+- Fixed Add Movie button does noq render correctly when the state changes. It does include release date. Debugged the input release date issue due to undefined.
 
 2. What are you going to work on next
-   - Edit an item(movie)
-   - Local storage to save the movie information in the browser.
-   - Update README file and improve code quality.
+
+- Local storage to save the movie information in the browser.
+- Use 3rd party API.
+- Update README file and improve code quality.
+
 3. What blockers you have (if any)
+
+- Edit an item(movie) allows edit within the button itself.
 
 ## Usage
 
@@ -190,8 +195,6 @@ To do:
 - Allow users to sign up & in using firebase.
 
 ## Unsolved problems
-
-- Add Movie button does not render correctly when the state changes. It does not include release date. Bug with input release date - unable to render user input.
 
 ## Acknowledgements
 
