@@ -45,6 +45,7 @@ Requrements see below:-
 
 - HTML - version: 5.0
 - CSS - version: 3.0
+- CSS Framework Bootstrap react - v2.0.3
 - JavaScript: version ES6
 - Reactjs: version 17.0.2
 
