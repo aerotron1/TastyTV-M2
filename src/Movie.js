@@ -15,11 +15,17 @@ function Movie(props) {
         getData()
     }, [props.movie])
 
+    useEffect(() => {
+        return () => {
+            localStorage.removeItem("movie")
+        }
+    }, [])
+
     return (
         <div class="p-3 mb-2 bg-secondary text-white">
             <Image src={props.movie.bannerUrl} roundedCircle />
-            <h2>{props.movie.name}</h2>
-            <h3>{props.movie.releasedOn}</h3>
+            <h2>Name: {props.movie.name}</h2>
+            <h3>Release: {props.movie.releasedOn}</h3>
         </div>
     )
 }

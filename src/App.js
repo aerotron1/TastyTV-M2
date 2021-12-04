@@ -7,17 +7,9 @@ import Badge from 'react-bootstrap/Badge'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const initialMovie = {
-    "id": 391,
-    "name": "Shrek",
-    "releasedOn": "25/07/2060",
-    "watched": false,
-    "bannerUrl": "https://hub.dummyapis.com/Image?text=Item&height=120&width=120"
-}
-
 function App() {
   const [currentMovie, setCurrentMovie] = useState()
-  const [movieData, setMovieData] = useState([initialMovie])
+  const [movieData, setMovieData] = useState([])
 
   useEffect(() => {
     async function getData() {
