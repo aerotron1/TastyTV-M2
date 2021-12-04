@@ -3,43 +3,47 @@ import AddMovie from './AddMovie'
 import Button from 'react-bootstrap/Button'
 
 function AddMovieList() {
-    const [adds, setAdds] = useState([])
+    const [addsMovie, setAddsMovie] = useState([])
     const [movieValue, setMovieValue] = useState("")
 
     function handleChangeName(event) {
         setMovieValue(event.target.value)
     }
 
+    function handleChangeRelease(event) {
+        setMovieValue(event.target.value)
+    }
+
     function addMovie(event) {
         event.preventDefault()
-        setAdds([...adds,{name:movieValue, watched: false}])
+        setAddsMovie([...addsMovie,{name:movieValue, watched: false}])
     }
 
     function removeMovie(movie) {
-        const newMovies = adds.filter((movieItem) => movieItem !== movie)
-        setAdds(newMovies)
+        const newMovies = addsMovie.filter((movieItem) => movieItem !== movie)
+        setAddsMovie(newMovies)
     }
 
-    function watchedMovie(name) {
-        const newMovies = adds.map((movie) => {
-            if (movie.name === name) {
+    function watchedMovie(name, release) {
+        const newMovies = addsMovie.map((movie) => {
+            if (movie.name === name && movie.release === release) {
                 return {...movie, watched: true}
             }
             return movie
         })
-        setAdds(newMovies)
+        setAddsMovie(newMovies)
     }
 
     return (
         <section class="bg-success p-2 text-white bg-opacity-50">
             <div>
-                {adds.map((add, index) => 
-                    <AddMovie watchedMovie={watchedMovie} removeMovie={removeMovie} key={`add-${index}`} add={add}/>
+                {addsMovie.map((add,index) => 
+                    <AddMovie watchedMovie={watchedMovie} removeMovie={removeMovie} key={`addMovie-${index}`} addMovie={add}/>
                 )}
             </div>
             <form>
                 <input onChange={handleChangeName} placeholder="Add name" />
-                <input onChange={handleChangeName} placeholder="Add released on" />
+                <input onChange={handleChangeRelease} placeholder="Add released on" />
                 <Button variant="outline-success" onClick={addMovie}>Add Movie</Button>{' '}
                 <button onClick={() => setMovieValue("")}>Remove movies</button>
             </form>
