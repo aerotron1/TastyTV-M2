@@ -1,11 +1,13 @@
+import Button from 'react-bootstrap/Button'
+
 function MovieList(props) {
 
     return (
         <div>
             {props.movieData.map((movie, index) =>
-            <button key={index} onClick={() => props.setCurrentMovie(movie)}>
+            <Button variant="outline-secondary" key={index} onClick={() => props.setCurrentMovie(movie)}>
                     {movie.name}
-            </button>
+            </Button>
         )}
         </div>
     )

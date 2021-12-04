@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import AddMovie from './AddMovie'
+import Button from 'react-bootstrap/Button'
 
 function AddMovieList() {
     const [adds, setAdds] = useState([])
@@ -30,7 +31,7 @@ function AddMovieList() {
     }
 
     return (
-        <section>
+        <section class="bg-success p-2 text-white bg-opacity-50">
             <div>
                 {adds.map((add, index) => 
                     <AddMovie watchedMovie={watchedMovie} removeMovie={removeMovie} key={`add-${index}`} add={add}/>
@@ -39,8 +40,8 @@ function AddMovieList() {
             <form>
                 <input onChange={handleChangeName} placeholder="Add name" />
                 <input onChange={handleChangeName} placeholder="Add released on" />
-                <button onClick={addMovie} >Add Movie</button>
-                <button onClick={() => setMovieValue("")}>Remove movies added</button>
+                <Button variant="outline-success" onClick={addMovie}>Add Movie</Button>{' '}
+                <button onClick={() => setMovieValue("")}>Remove movies</button>
             </form>
         </section>
     )

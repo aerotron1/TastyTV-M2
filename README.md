@@ -1,7 +1,7 @@
 # Project - TastyTV
 
 > TastyTV is a movie and tv show live-streaming service. Whom require a promotional website to pubicisize the company and its offerings.They want to Launch a SPA (Single page application) that allows its visitors to maintain and watch movies later.
-> Live demo [_here_](https://github.com/aerotron1/TastyTV-M2.git).
+> Live demo [_here_](https://flamboyant-mayer-a85a2b.netlify.app/?).
 
 ## Table of Contents
 
@@ -60,8 +60,8 @@ List the ready features here:
 
 # Location
 
-> HTTPS link [_here_](https://github.com/aerotron1/TastyTV-M2.git).
-> GitHub link [_here_](git@github.com:aerotron1/TastyTV-M2.git).
+> GitHub link [_here_](https://github.com/aerotron1/TastyTV-M2.git).
+> Site link [_here_](https://flamboyant-mayer-a85a2b.netlify.app/?).
 
 # Setup & Installation
 
@@ -195,6 +195,8 @@ Give credit here.
 - [Freecodecamp](https://www.freecodecamp.org/)
 - [W3schools](https://www.w3schools.com/).
 - [MDN](https://developer.mozilla.org/en-US/).
+- [MDN-editable-content](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/components/badge/)
 
 ## Contact
 

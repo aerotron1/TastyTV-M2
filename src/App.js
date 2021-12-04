@@ -3,6 +3,9 @@ import MovieList from './MovieList'
 import Movie from './Movie'
 import AddMovieList from './AddMovieList'
 import './App.css';
+import Badge from 'react-bootstrap/Badge'
+import Button from 'react-bootstrap/Button'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const initialMovie = {
     "id": 391,
@@ -27,17 +30,20 @@ function App() {
 
   return (
     <div className="App">
-        <button onClick={() => setCurrentMovie("")}>
-        Remove all movie
-        </button>
+      <div>
+        <h1>
+          TastyTV <Badge bg="secondary">SPA</Badge>
+        </h1>
+      </div>
+        <Button variant="outline-warning" onClick={() => setCurrentMovie("")}>Remove all movie</Button>{' '}
         <div className="container">
           <MovieList
           movieData={movieData}
           setCurrentMovie={setCurrentMovie}
         />
         {currentMovie && <Movie movie={currentMovie} />}
-        <AddMovieList/>
-        </div>
+        <AddMovieList />
+      </div>
     </div>
   );
 }
