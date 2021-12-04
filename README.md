@@ -134,17 +134,33 @@ List the ready features here:
 1. What have you done so far
 
 - Remove movie
+- Fixed watched button
+- Used CSS using bootstrap react.
 
 2. What are you going to work on next
    - Complete check for functionality.
    - Edit an item(movie)
-   - Add CSS using react components.
    - Local storage to save the movie information in the browser.
    - Update README file and improve code quality.
 3. What blockers you have (if any)
    - Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render in similar format to client Array (Movie.js).
    - After a new movie is entered, it duplicates as an output.
-   - watchedMovie does not change colour individually.
+   - watched feature did not change colour individually - typed different movie name.
+
+04/12/21
+
+1. What have you done so far
+
+- Fixed watched button
+- Used CSS using bootstrap react.
+- Update README file and improve code quality.
+
+2. What are you going to work on next
+   - Edit an item(movie)
+   - Local storage to save the movie information in the browser.
+   - Update README file and improve code quality.
+3. What blockers you have (if any)
+   Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render in similar format to client Array (Movie.js).
 
 ## Usage
 
