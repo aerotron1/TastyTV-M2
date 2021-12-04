@@ -5,18 +5,19 @@ import Button from 'react-bootstrap/Button'
 function AddMovieList() {
     const [addsMovie, setAddsMovie] = useState([])
     const [movieValue, setMovieValue] = useState("")
+    const [movieRelease, setMovieRelease] = useState("")
 
     function handleChangeName(event) {
         setMovieValue(event.target.value)
     }
 
     function handleChangeRelease(event) {
-        setMovieValue(event.target.value)
+        setMovieRelease(event.target.value)
     }
 
     function addMovie(event) {
         event.preventDefault()
-        setAddsMovie([...addsMovie,{name:movieValue, watched: false}])
+        setAddsMovie([...addsMovie,{name:movieValue, release:movieRelease,watched: false}])
     }
 
     function removeMovie(movie) {

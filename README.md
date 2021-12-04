@@ -155,13 +155,13 @@ List the ready features here:
 - Used CSS using bootstrap react.
 - Update README file and improve code quality.
 - Edit lets edit the text in the button.
+- Fixed the Add Movie button now renders correctly when the state changes. Debugged with input release date renders user input.
 
 2. What are you going to work on next
    - Edit an item(movie)
    - Local storage to save the movie information in the browser.
    - Update README file and improve code quality.
 3. What blockers you have (if any)
-   - Add Movie button does not render correctly when the state changes. Bug with input release date - unable to render user input.
 
 ## Usage
 
